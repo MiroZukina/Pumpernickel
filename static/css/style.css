@@ -1,0 +1,29 @@
+.home{
+    width: 1420px;
+    height: 880px;
+    background-color: bisque;
+    margin: 10px;
+}
+
+
+.about{
+    width: 1420px;
+    height: 880px;
+    background-color: rgb(196, 229, 255);
+    margin: 10px;
+}
+body{
+    background-color: aquamarine;
+}
+
+
+@media (max-width: 576px) {
+    .images{
+        max-width: 300px; /* Adjust this value as needed */
+    }
+
+.align-horizontal {
+    display: block; /* Force stacking on mobile */
+
+}
+}
