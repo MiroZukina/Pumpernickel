@@ -11,8 +11,8 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">
-                <img src="{{ url_for('static', filename='images/logo.jpeg') }}" class="img-fluid me-2" alt="Company Logo" style="max-width: 100px;">$PUMP
+            <a class="navbar-brand text-white" href="#home">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" class="img-fluid me-2" alt="Company Logo" style="max-width: 100px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,13 +20,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#buy">Buy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white"  aria-current="page" href="#about">About</a>
+                        <a class="nav-link text-white"  aria-current="page" href="#proof">Proof</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled text-white" aria-disabled="true"></a>
                     </li>
                 </ul>
             </div>
@@ -45,29 +45,42 @@
                 <h2>$PUMP</h2>
             </div>
             <div class="text-center mb-2 align-horizontal">
-                <a href="https://www.pump.fun/8euALmoYkD6AvqeXYDXgUgLVzbkG3XMdPH1qcFbcBp5B" class="btn btn-outline-primary btn-sm me-2" target="_blank">Buy Now</a>
+                <a href="https://www.pump.fun/8euALmoYkD6AvqeXYDXgUgLVzbkG3XMdPH1qcFbcBp5B"   class="btn btn-outline-primary btn-sm " target="_blank">Buy Now</a>
             </div>
             <div class="text-center mb-2 align-horizontal">
                 <div class="d-flex justify-content-center">
                     <a class="btn btn-outline-primary btn-sm me-2" href="https://t.me/tickerpump" target="_blank">
                         <img src="{{ url_for('static', filename='images/telegram.svg') }}" alt="Telegram" class="bi bi-telegram"> Telegram
                     </a>
-                    <a class="btn btn-outline-primary btn-sm" href="https://twitter.com/tickerpump" target="_blank">
+                    <a class="btn btn-outline-primary btn-sm me-2" href="https://twitter.com/pumperticker" target="_blank">
                         <img src="{{ url_for('static', filename='images/twitter-x.svg') }}" alt="Twitter" class="bi bi-twitter-x"> Twitter
+                    </a>
+                    <a class="btn btn-outline-primary btn-sm me-2" href="https://www.instagram.com/pumpernickel_pump_official" target="_blank">
+                        <img src="{{ url_for('static', filename='images/instagram.svg') }}" alt="Instagram" class="bi bi-instagram"> Instagram
                     </a>
                 </div>
             </div>
+            
         </div>
     </div>
 
+</section>  
+
+
+<section class="buy" id="buy">
+    <h1>Howe to buy</h1>
+
 </section>
 
-<section class="about" id="about">
-    <h2 class="text-center">About</h2>
+<section class="proof" id="proof">
+    <h3 class="text-center">Proof</h3>
     <h1 class="text-center">Pumpernickel (ticker: PUMP)</h1>
     <p>Pumpernickel is a typically dense, slightly sweet rye bread traditionally made with sourdough starter and coarsely ground rye. It is sometimes made with a combination of rye flour and whole rye grains.</p>
 
 </section>
 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
