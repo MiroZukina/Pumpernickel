@@ -5,12 +5,22 @@
     margin: 10px;
 }
 
-.about{
+.proof{
     width: 100%;
     height: auto;
-    background-color: rgb(196, 229, 255);
+    background-color: rgb(255, 227, 196);
     margin: 10px;
 }
+
+
+.buy{
+    width: 800px;
+    height: 1000px;
+    background-color: rgb(196, 229, 255);
+    
+    margin: 10px;
+}
+
 
 body{
     background-color: aquamarine;
