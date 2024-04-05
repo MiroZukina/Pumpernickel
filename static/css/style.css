@@ -1,29 +1,39 @@
 .home{
-    width: 1420px;
-    height: 880px;
+    width: 100%;
+    height: auto;
     background-color: bisque;
     margin: 10px;
 }
 
-
 .about{
-    width: 1420px;
-    height: 880px;
+    width: 100%;
+    height: auto;
     background-color: rgb(196, 229, 255);
     margin: 10px;
 }
+
 body{
     background-color: aquamarine;
 }
 
-
-@media (max-width: 576px) {
-    .images{
-        max-width: 300px; /* Adjust this value as needed */
+@media (min-width: 576px) {
+    .home{
+        width: 1420px;
+        height: 880px;
     }
 
-.align-horizontal {
-    display: block; /* Force stacking on mobile */
-
+    .about{
+        width: 1420px;
+        height: 880px;
+    }
 }
+
+@media (max-width: 576px) {
+    .img-smaller {
+        max-width: 100px; /* Adjust this value as needed */
+    }
+
+    .align-horizontal {
+        text-align: center; /* Center align on mobile */
+    }
 }
