@@ -9,77 +9,114 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#home">
-                <img src="{{ url_for('static', filename='images/logo.png') }}" class="img-fluid me-2" alt="Company Logo" style="max-width: 100px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#buy">Buy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white"  aria-current="page" href="#proof">Proof</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled text-white" aria-disabled="true"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-
-<section class="home" id="home">
-    <div class="row align-items-center">
-        <div class="col-md-6">
-            <img src="{{ url_for('static', filename='images/logo.jpeg') }}" class="img-fluid me-2 img-smaller" style="max-width: 100%;">
-        </div>
-        <div class="col-md-6">
-            <div class="text-center mb-2 align-horizontal">
-                <h2>$PUMP</h2>
-            </div>
-            <div class="text-center mb-2 align-horizontal">
-                <a href="https://www.pump.fun/8euALmoYkD6AvqeXYDXgUgLVzbkG3XMdPH1qcFbcBp5B"   class="btn btn-outline-primary btn-sm " target="_blank">Buy Now</a>
-            </div>
-            <div class="text-center mb-2 align-horizontal">
-                <div class="d-flex justify-content-center">
-                    <a class="btn btn-outline-primary btn-sm me-2" href="https://t.me/tickerpump" target="_blank">
-                        <img src="{{ url_for('static', filename='images/telegram.svg') }}" alt="Telegram" class="bi bi-telegram"> Telegram
-                    </a>
-                    <a class="btn btn-outline-primary btn-sm me-2" href="https://twitter.com/pumperticker" target="_blank">
-                        <img src="{{ url_for('static', filename='images/twitter-x.svg') }}" alt="Twitter" class="bi bi-twitter-x"> Twitter
-                    </a>
-                    <a class="btn btn-outline-primary btn-sm me-2" href="https://www.instagram.com/pumpernickel_pump_official" target="_blank">
-                        <img src="{{ url_for('static', filename='images/instagram.svg') }}" alt="Instagram" class="bi bi-instagram"> Instagram
-                    </a>
+    <header>
+        <nav class="navbar  fixed-top navbar-expand-lg bg-primary" >
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#home">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" class="img-fluid me-2" alt="Company Logo" style="max-width: 100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#buy">How to Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white"  aria-current="page" href="#proof">Proof</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled text-white" aria-disabled="true"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            
+        </nav>
+    </header>
+    
+    
+    <section id="home">
+        <div class="row align-items-center">
+            <div class="col-md-6" id="about">
+                <p><strong>Pumpernickel</strong> is dense, slightly sweet rye bread traditionally made with sourdough starter and coarsely ground rye and rye berries. The characteristic dark color is achieved through a very long baking period (about 14 hours at a low temperature of around 120°C) and caramelizing fruit sugars. At one time, it was traditional peasant fare, but largely during the 20th century, various forms became popular with other classes through delicatessens and supermarkets.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="text-center mb-2 align-horizontal">
+                    <h2>$PUMP</h2>
+                </div>
+                <div class="text-center mb-1 align-horizontal">
+                    <a href="https://www.pump.fun/8euALmoYkD6AvqeXYDXgUgLVzbkG3XMdPH1qcFbcBp5B" class="btn btn-outline-primary btn-sm" target="_blank">Buy Now</a>
+                </div>
+                <div class="text-center mb-2 align-horizontal">
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-outline-primary btn-sm me-2" href="https://t.me/pumpernickelportal" target="_blank">
+                            <img src="{{ url_for('static', filename='images/telegram.svg') }}" alt="Telegram" class="bi bi-telegram"> Telegram
+                        </a>
+                        <a class="btn btn-outline-primary btn-sm me-2" href="https://twitter.com/pumperticker" target="_blank">
+                            <img src="{{ url_for('static', filename='images/twitter-x.svg') }}" alt="Twitter" class="bi bi-twitter-x"> Twitter
+                        </a>
+                        <a class="btn btn-outline-primary btn-sm me-2" href="https://www.instagram.com/pumpernickel_pump_official" target="_blank">
+                            <img src="{{ url_for('static', filename='images/instagram.svg') }}" alt="Instagram" class="bi bi-instagram"> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-</section>  
-
-
-<section class="buy" id="buy">
-    <h1>Howe to buy</h1>
+        <h1>Pumpernickel on Solana is a fair-launch token safely created on <a target="_blank" href="https://pump.fun/board">Pump.fun</a> <img src="{{ url_for('static', filename='images/pump.webp') }}"></h1>
+    </section>
+    
+    <section id="buy">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>How to Buy $PUMP on Solana</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="step">
+                        <h3>Step 1</h3>
+                        <p>Create a wallet</p>
+                        <p>Download<a target="_blank" href="https://solflare.com/"> Solflare</a> or your wallet of choice from the Apple App Store or Google Play store for free. Desktop users, download the google chrome extension by going to solflare.com</p>
+                    </div>
+                    <div class="step">
+                        <h3> Step 2</h3>
+                        <p>Get some Solana</p>
+                        <p>Fund your wallet with SOLNA before swapping to Pumpernickle. If you don't have any SOLANA, you can  transfer from another wallet, or buy on another exchange and send it to your wallet.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="step">
+                        <h3>Step 3</h3>
+                        <p>Go to <a target="_blank" href="https://pump.fun/board">Pump.fun</a></p>
+                        <p>Open the browser tab and go to <a target="_blank" href="https://pump.fun/board">Pump.fun</a>. Check if the link is correct 420 times before you connect your wallet. Connect your wallet. In the search bar type the token name Pumpernickel. Look for ticker pump $PUMP. Select buy on the buy/sell tab and spend your $SOL to get $PUMP.  $PUMP Token Address: 0x79C6Ffe2ccBca761e9E289A69432bFfB0b744876</p>
+                    </div>
+            </div>
+        </div>
 
 </section>
 
 <section class="proof" id="proof">
-    <h3 class="text-center">Proof</h3>
-    <h1 class="text-center">Pumpernickel (ticker: PUMP)</h1>
-    <p>Pumpernickel is a typically dense, slightly sweet rye bread traditionally made with sourdough starter and coarsely ground rye. It is sometimes made with a combination of rye flour and whole rye grains.</p>
+    <h1 class="mt-5">Proof</h1>
+    <p>In cooking, proofing (also called proving) is a step in the preparation of yeast bread and other baked goods in which the dough is allowed to rest and rise a final time before baking. During this rest period, yeast ferments the dough and produces gases, thereby leavening the dough.</p>
+    
+    <p>Just like any other type of yeast bread Pumpernickel needs time to proof to fully reach its potential. There are many benefits to proofing but these are some of the key ones for Pumpernickel:</p>
+    
+    <ul>
+      <li>Raydium liquidity pool</li>
+      <li>Trackable on DexScreener</li>
+      <li>Show $dollar value in wallet</li>
+      <li>Telegram buy bot</li>
+    </ul>
+    
+    <p>Check Pumpernickel proofing progress <a target="_blank" href="https://pump.fun/8euALmoYkD6AvqeXYDXgUgLVzbkG3XMdPH1qcFbcBp5B">here</a>.</p>
+
 
 </section>
-
+<footer>
+      <p class="card-text">Copyright &copy; 2024 My Website</p>
+      <a href="#" class="btn btn-primary">Go to top</a>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
