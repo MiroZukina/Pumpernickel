@@ -1,25 +1,82 @@
-.home{
+
+body {
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+}
+#home{
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 100%;
     height: auto;
     background-color: bisque;
     margin: 10px;
 }
 
+#about{
+
+    width: 600px;
+    height: 380px;
+    margin: 10px;
+    color: black;
+    background-image: url("/static/images/logo.jpeg"); 
+    background-size: cover;
+    position: relative; /* Needed for absolute positioning */
+    opacity: 0.7;
+}
+
+
+#about p {
+    opacity: 1; /* Full opacity for text */
+}
+p {
+    font-family: Arial, sans-serif; /* Set font family */
+    font-size: 16px; /* Set font size */
+    line-height: 1.5; /* Set line height */
+    color: black; /* Set text color */
+    margin-bottom: 20px; /* Add some space below the paragraph */
+}
+#buy {
+    padding: 50px;
+    width: 100%;
+    height:auto;
+    background-color: rgb(196, 229, 255);
+    
+    margin: 10px;
+    padding-top: 50px;
+    color: #f1c40f;
+}
+.step {
+    background-color: #34495e; /* Darker blue background color for steps */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.step h3 {
+    color: #f1c40f; /* Yellow text color for step number */
+    margin-bottom: 20px;
+}
+
+
 .proof{
     width: 100%;
     height: auto;
+    padding: 50px;
     background-color: rgb(255, 227, 196);
     margin: 10px;
 }
 
 
-.buy{
-    width: 800px;
-    height: 1000px;
-    background-color: rgb(196, 229, 255);
-    
-    margin: 10px;
+footer{
+    padding: 50px;
 }
+
 
 
 body{
@@ -46,4 +103,10 @@ body{
     .align-horizontal {
         text-align: center; /* Center align on mobile */
     }
+}
+
+.align-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
