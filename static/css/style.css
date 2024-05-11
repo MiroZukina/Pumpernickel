@@ -19,27 +19,35 @@ header {
     margin: 10px;
 }
 
-#about{
-
+#about {
     width: 600px;
     height: 380px;
     margin: 10px;
     color: black;
-    background-image: url("/static/images/logo.jpeg"); 
+    position: relative;
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/static/images/logo.jpeg");
     background-size: cover;
-    position: relative; /* Needed for absolute positioning */
-    opacity: 0.7;
+    filter: brightness(100%); /* Adjust brightness percentage as needed */
+    opacity: 0.40;
+    z-index: 0; /* Ensure the pseudo-element is behind the text */
 }
 
 
-#about p {
-    opacity: 1; /* Full opacity for text */
-}
-p {
+
+#buy p {
     font-family: Arial, sans-serif; /* Set font family */
     font-size: 16px; /* Set font size */
     line-height: 1.5; /* Set line height */
-    color: black; /* Set text color */
+    color:white; /* Set text color */
     margin-bottom: 20px; /* Add some space below the paragraph */
 }
 #buy {
@@ -50,7 +58,7 @@ p {
     
     margin: 10px;
     padding-top: 50px;
-    color: #f1c40f;
+    color:white;
 }
 .step {
     background-color: #34495e; /* Darker blue background color for steps */
@@ -59,10 +67,13 @@ p {
     margin-bottom: 20px;
 }
 .step h3 {
-    color: #f1c40f; /* Yellow text color for step number */
+    color: white; /* Yellow text color for step number */
     margin-bottom: 20px;
 }
-
+.token-address {
+    max-width: 200px; /* Adjust the width as needed */
+    word-wrap: break-word;
+}
 
 .proof{
     width: 100%;
@@ -82,6 +93,10 @@ footer{
 body{
     background-color: aquamarine;
 }
+.token-address {
+    max-width: 200px; /* Adjust the width as needed */
+    word-wrap: break-word;
+}
 
 @media (min-width: 576px) {
     .home{
@@ -93,9 +108,12 @@ body{
         width: 1420px;
         height: 880px;
     }
-}
+    .token-address {
+        max-width: 200px; /* Adjust the width as needed */
+        word-wrap: break-word;
+    }
+    
 
-@media (max-width: 576px) {
     .img-smaller {
         max-width: 100px; /* Adjust this value as needed */
     }
@@ -105,8 +123,15 @@ body{
     }
 }
 
+
+@media (max-width: 350px){
+
+        
+    
+   
 .align-horizontal {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 }
